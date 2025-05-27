@@ -1,3 +1,8 @@
+from connpass.core import RequestHandler
+
+from .constants import BASE_URL
+
+
 class Connpass:
     """Connpass API クライアント。
 
@@ -17,3 +22,6 @@ class Connpass:
             c = Connpass("YOUR_API_KEY")
         """
         self.api_key = api_key
+
+        # 共通リクエストハンドラーを呼び出し
+        self.request_handler = RequestHandler(api_key=api_key, base_url=BASE_URL)

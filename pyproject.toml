@@ -7,7 +7,9 @@ authors = [
     { name = "ryohidaka", email = "39184410+ryohidaka@users.noreply.github.com" }
 ]
 requires-python = ">=3.12.2"
-dependencies = []
+dependencies = [
+    "requests>=2.32.3",
+]
 
 [build-system]
 requires = ["hatchling"]
