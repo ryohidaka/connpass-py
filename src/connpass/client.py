@@ -1,4 +1,7 @@
+from typing import Optional
+
 from connpass.core import RequestHandler
+from connpass.models import GetEventsQuery, GetEventsResponse
 
 from .constants import BASE_URL
 
@@ -25,3 +28,20 @@ class Connpass:
 
         # 共通リクエストハンドラーを呼び出し
         self.request_handler = RequestHandler(api_key=api_key, base_url=BASE_URL)
+
+    def get_events(self, query: Optional[GetEventsQuery] = None) -> GetEventsResponse:
+        """
+        検索クエリの条件に応じたイベント一覧を取得する。
+
+        Args:
+            query (Optional[GetEventsQuery]): 検索条件
+
+        Returns:
+            GetEventsResponse: イベント一覧レスポンス
+
+        Raises:
+            ValueError: API リクエストに失敗した場合
+        """
+        query_dict = query.model_dump(exclude_none=True) if query else None
+        response_json = self.request_handler.get("events", query_dict)
+        return GetEventsResponse(**response_json)
