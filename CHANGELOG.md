@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.1](https://github.com/ryohidaka/connpass-py/compare/v0.1.0...v0.1.1) (2025-05-28)
+
+
+### Bug Fixes
+
+* **models:** 不要なコメントを削除 ([a39a750](https://github.com/ryohidaka/connpass-py/commit/a39a7507b1a984ef0e9f7347e05634f86375195c))
+
+
+### Documentation
+
+* バージョンバッジを追加 ([33a3228](https://github.com/ryohidaka/connpass-py/commit/33a322880cd515654241050b0d1854650b1abe6d))
+
 ## 0.1.0 (2025-05-28)
 
 
