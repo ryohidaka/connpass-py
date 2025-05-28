@@ -1,5 +1,6 @@
 # connpass-py
 
+![PyPI - Version](https://img.shields.io/pypi/v/connpass)
 [![codecov](https://codecov.io/gh/ryohidaka/connpass-py/graph/badge.svg?token=wdfk9DbTO5)](https://codecov.io/gh/ryohidaka/connpass-py)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
