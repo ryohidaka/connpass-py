@@ -20,7 +20,7 @@ jobs:
           enable-cache: true
 
       - name: Install dependencies
-        run: uv sync --locked --all-extras --dev
+        run: uv sync --all-extras --dev
 
       - name: Run build
         run: uv build
