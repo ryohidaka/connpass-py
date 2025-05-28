@@ -95,9 +95,7 @@ class GetEventsQuery(BaseModel):
     )
     group_id: Optional[List[int]] = Field(None, description="グループID")
     subdomain: Optional[List[str]] = Field(None, description="サブドメイン")
-    prefecture: Optional[List[str]] = Field(
-        None, description="都道府県"
-    )  # Prefectureは任意
+    prefecture: Optional[List[str]] = Field(None, description="都道府県")
     order: Optional[EventOrder] = Field(
         None, description="表示順（1: 更新日時順, 2: 開催日時順, 3: 新着順）"
     )
