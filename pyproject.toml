@@ -1,7 +1,7 @@
 [project]
 name = "connpass"
 version = "0.1.0"
-description = "Add your description here"
+description = "Python用connpass API v2クライアント"
 readme = "README.md"
 authors = [
     { name = "ryohidaka", email = "39184410+ryohidaka@users.noreply.github.com" }
@@ -11,6 +11,13 @@ dependencies = [
     "pydantic>=2.11.5",
     "requests>=2.32.3",
 ]
+license = "MIT"
+license-files = ["LICEN[CS]E.*"]
+keywords = ["connpass", "connpass-api", "api-client", "api"]
+
+[project.urls]
+Repository = "https://github.com/ryohidaka/connpass-py.git"
+"Bug Tracker" = "https://github.com/ryohidaka/connpass-py/issues"
 
 [build-system]
 requires = ["hatchling"]
