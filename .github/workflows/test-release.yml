@@ -30,6 +30,12 @@ jobs:
       - name: Install dependencies
         run: uv sync --all-extras --dev
 
+      - name: Bump lockfile version
+        uses: ryohidaka/action-commit-push@v0.6.0
+        with:
+          files: "uv.lock"
+          commit-message: "chore: Bump lockfile version"
+
   test:
     runs-on: ubuntu-latest
     needs: prepare
