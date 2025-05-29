@@ -1,7 +1,12 @@
 from typing import Optional
 
 from connpass.core import RequestHandler
-from connpass.models import GetEventsQuery, GetEventsResponse
+from connpass.models import (
+    GetEventPresentationsQuery,
+    GetEventPresentationsResponse,
+    GetEventsQuery,
+    GetEventsResponse,
+)
 
 from .constants import BASE_URL
 
@@ -45,3 +50,24 @@ class Connpass:
         query_dict = query.model_dump(exclude_none=True) if query else None
         response_json = self.request_handler.get("events", query_dict)
         return GetEventsResponse(**response_json)
+
+    def get_event_presentations(
+        self, id: int, query: Optional[GetEventPresentationsQuery] = None
+    ) -> GetEventPresentationsResponse:
+        """
+        イベントに投稿された資料一覧を取得する。
+
+        Args:
+            query (Optional[GetEventPresentationsQuery]): 検索条件
+
+        Returns:
+            GetEventPresentationsResponse: イベント資料一覧のレスポンス
+
+        Raises:
+            ValueError: API リクエストに失敗した場合
+        """
+        query_dict = query.model_dump(exclude_none=True) if query else None
+        response_json = self.request_handler.get(
+            f"events/{id}/presentations", query_dict
+        )
+        return GetEventPresentationsResponse(**response_json)
