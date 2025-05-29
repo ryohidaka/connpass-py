@@ -1,6 +1,6 @@
 [project]
 name = "connpass"
-version = "0.1.1"
+version = "0.2.0"
 description = "Python用connpass API v2クライアント"
 readme = "README.md"
 authors = [

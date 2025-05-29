@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.0](https://github.com/ryohidaka/connpass-py/compare/v0.1.1...v0.2.0) (2025-05-29)
+
+
+### Features
+
+* **api:** イベント資料一覧取得を追加 ([7f2e8f4](https://github.com/ryohidaka/connpass-py/commit/7f2e8f44aae8a38a6041bfc538180cc45492f82a))
+* **examples:** イベント資料一覧取得のサンプルを追加 ([ebb40c3](https://github.com/ryohidaka/connpass-py/commit/ebb40c36f121a75a92c7b994499ab6617e133928))
+* **models:** イベント資料一覧の型定義を追加 ([115677f](https://github.com/ryohidaka/connpass-py/commit/115677f41c0ff287b437850f1f987e76022e5a1b))
+
+
+### Documentation
+
+* 使用例を更新 ([7cb2be9](https://github.com/ryohidaka/connpass-py/commit/7cb2be9205cf7b70678c83ce343e8ef67edf3337))
+
 ## [0.1.1](https://github.com/ryohidaka/connpass-py/compare/v0.1.0...v0.1.1) (2025-05-28)
 
 
