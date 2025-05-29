@@ -9,6 +9,13 @@ from .event import (
     Group,
     OpenStatus,
 )
+from .presentation import (
+    GetEventPresentationsQuery,
+    GetEventPresentationsResponse,
+    Presentation,
+    PresentationType,
+    PresentationUser,
+)
 
 __all__ = [
     "EventOrder",
@@ -18,4 +25,9 @@ __all__ = [
     "ConnpassEvent",
     "GetEventsResponse",
     "GetEventsQuery",
+    "PresentationType",
+    "PresentationUser",
+    "Presentation",
+    "GetEventPresentationsResponse",
+    "GetEventPresentationsQuery",
 ]
