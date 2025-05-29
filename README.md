@@ -32,7 +32,15 @@ client = Connpass(api_key=API_KEY)
 ### イベント
 
 ```py
-events = client.get_events()
+response = client.get_events()
+events = response.events
+```
+
+### イベント資料
+
+```py
+response = client.get_event_presentations(364)
+presentations = response.presentations
 ```
 
 ## リンク
